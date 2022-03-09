@@ -1,19 +1,15 @@
 const space = '\40', caracter = '#', segundo = 1000;
-//let num = prompt("Insira um numero"),
-let num = 20; if(num%2!=0) num++;
-
+let num = 40; /*let num = prompt("Insira um numero"),*/ if(num%2!=0) num++;
 let countP1 = num/2,
     countP2 = num,
     timer = 0;
 
-// console.log(countP1,countP2)
 const ampulheta = (num) => {
     timer += segundo;
     let meio = num/2,
     auxNum = num,
     aux = meio;
-    
-
+    console.log('\n')
     for (i=0; i<num; i++) {
         if (i < meio){
             if (i==0) {
@@ -41,10 +37,7 @@ const ampulheta = (num) => {
             auxNum+=2;
         }
     }
-console.log('\n\n\n')
---countP1;
---countP2;
-//console.log(`P1:${countP1} P2:${countP2}`)
+--countP1, --countP2;
 }
 const intervalo = setInterval(()=>{
     ampulheta(num);
