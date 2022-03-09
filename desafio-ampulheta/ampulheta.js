@@ -1,5 +1,5 @@
-let num = prompt("Insira o tamanho da ampulheta:");
-
+// let num = prompt("Insira o tamanho da ampulheta:");
+let num = 20;
 const ampulheta = (num) => {
     let metade = parseInt(num/2);
     let auxNum;
