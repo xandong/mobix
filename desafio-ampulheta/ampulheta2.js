@@ -38,8 +38,8 @@ const ampulheta = (num) => {
             auxNum+=2;
         }
     }
-console.log('\n')
---countP1, --countP2;
+    console.log('\n')
+    --countP1, --countP2;
 }
 const intervalo = setInterval(()=>{
     ampulheta(num);
