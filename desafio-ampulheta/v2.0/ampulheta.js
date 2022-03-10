@@ -1,5 +1,6 @@
 const space = '\40', caracter = '#', segundo = 1000;
-let num = 20; /*let num = prompt("Insira um numero"),*/ if(num%2!=0) num++;
+let num = 20;
+if(num%2!=0) num++;
 let countP1 = num/2,
     countP2 = num,
     timer = 0;
@@ -46,4 +47,4 @@ const intervalo = setInterval(()=>{
     if (timer >= num*segundo/2){
         paraIntervalo = clearInterval(intervalo)
     }
-}, segundo);
+}, segundo*2);
